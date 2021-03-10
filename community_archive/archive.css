@@ -1,0 +1,62 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 960px;
+  }
+  
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+
+@font-face {
+    font-family: 'Zhuo';
+    src: url('../fonts/Zhuo/Zhuo-webfont.woff2') format('woff2'),
+         url('../fonts/Zhuo/Zhuo-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+         font-display: swap;
+}
+
+h2{
+    font-family: 'Zhuo';
+    font-weight:30;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+@font-face {
+    font-family: 'Fangzheng';
+    src: url('../fonts/Fangzheng/Fangzheng-webfont.woff2') format('woff2'),
+         url('../fonts/Fangzheng/Fangzheng-webfont.woff') format('woff');
+}
+
+h1{
+    font-family: 'Fangzheng';
+    font-weight:30;
+    font-style: regular;
+    font-size: 2rem;
+}
