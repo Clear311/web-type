@@ -105,6 +105,7 @@
 
 .events{
     flex-flow:column;
+    cursor: pointer;
 }
 .block1, .block2, .block3, .block4, .block5, .block6{
     width:1250px;
@@ -150,7 +151,12 @@
     margin-left: 300px;
     padding: 10px;
 }
-
+.detail-content1{
+    height: 100px;
+    width:1250px;
+    background-color: grey;
+    padding: 20px;
+}
 
 .side-nav{
     height: 100%;
