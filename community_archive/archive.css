@@ -99,7 +99,18 @@
 
 
 .about-area {
-    height: 100vh;
+    height: 1320px;
+    overflow:hidden;
+}
+
+.events{
+    flex-flow:column;
+}
+.block1, .block2, .block3, .block4, .block5, .block6{
+    width:1250px;
+    height: 220px;
+    background-color: white;
+    border-bottom: 2px solid black;
 }
 
 .side-nav{
