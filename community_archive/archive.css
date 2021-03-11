@@ -7,10 +7,10 @@
 }
 
 
- .wrapper {
+.wrapper {
     margin: 0 auto;
     width: 1250px;
-  }
+}
 
 .banner{
     height: 100vh;
@@ -20,6 +20,13 @@
     /* -webkit-background-size: cover;
     background-size: cover;
     background-position: center center; */
+}
+
+.grid-container{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(12, 99px);
+    grid-template-rows: repeat(8, 99px);
 }
 
 .about-area {
@@ -34,6 +41,52 @@
     margin: 0 0 0 0;
     background-color:#A84526;
     overflow-x: hidden;
+}
+
+.top-nav{
+    margin: 3.1em;
+    display: block;
+    line-height: 18px;
+}
+
+.top-nav h1{
+    font-family: "Zhuo";
+    font-size: 35px;
+    color: white;
+    /* line-height: 30px; */
+}
+
+.top-nav h2{
+    font-family: "BioRhyme";
+    font-size: 30px;
+    line-height: 35px;
+    color: white;
+}
+
+.top-nav{
+    font-family: "Fangzheng";
+    font-size: 11px;
+    color: white;
+}
+
+.top-nav p{
+    color: white;
+    font-family: "karla";
+    font-size: 14px;
+    /* line-height: 20px; */
+}
+
+.bottom-nav{
+    margin-top: 350px;
+    margin-left: 30px;
+}
+.bottom-nav a{
+    display:block;
+    padding: 0.3em;
+    font-family: "BioRhyme";
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
 }
 
 .content{
