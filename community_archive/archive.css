@@ -6,31 +6,43 @@
           box-sizing: border-box;
 }
 
-.container {
+
+ .wrapper {
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 960px;
+    width: 1250px;
   }
-  
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    overflow:hidden;
+    background-color: #A84526;
+    /* -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center; */
 }
 
+.about-area {
+    height: 100vh;
+}
+
+.side-nav{
+    height: 100%;
+    width: 300px;
+    position:fixed;
+    z-index: 1;
+    margin: 0 0 0 0;
+    background-color:#A84526;
+    overflow-x: hidden;
+}
+
+.content{
+    margin-left: 290px;
+    padding: 0 10px;
+}
+#about{
+    background: yellow;
+}
 
 @font-face {
     font-family: 'Zhuo';
@@ -41,22 +53,9 @@
          font-display: swap;
 }
 
-h2{
-    font-family: 'Zhuo';
-    font-weight:30;
-    font-style: normal;
-    font-size: 2rem;
-}
-
 @font-face {
     font-family: 'Fangzheng';
     src: url('../fonts/Fangzheng/Fangzheng-webfont.woff2') format('woff2'),
          url('../fonts/Fangzheng/Fangzheng-webfont.woff') format('woff');
 }
 
-h1{
-    font-family: 'Fangzheng';
-    font-weight:30;
-    font-style: regular;
-    font-size: 2rem;
-}
