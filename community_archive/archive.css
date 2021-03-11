@@ -113,6 +113,30 @@
     border-bottom: 2px solid black;
 }
 
+.division{
+    display: flex;
+    flex-flow:row;
+    /* padding: 10px; */
+}
+.description-k{
+    display:block;
+    padding: 10px;
+    padding-left: 60px;
+    width: 700px;
+    height: 200px;
+}
+.description-k h1{
+    font-family:"BioRhyme";
+    font-size: 30px;
+}
+
+.picture-k{
+    display:block;
+    margin-left: 300px;
+    padding: 10px;
+}
+
+
 .side-nav{
     height: 100%;
     width: 300px;
