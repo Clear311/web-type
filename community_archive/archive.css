@@ -124,10 +124,25 @@
     padding-left: 60px;
     width: 700px;
     height: 200px;
+    line-height: 15px;
 }
 .description-k h1{
     font-family:"BioRhyme";
     font-size: 30px;
+}
+.description-k h4{
+    font-family:"Fangzheng";
+    font-size: 20px;
+}
+.description-k h2{
+    font-family:"Karla";
+    font-style: bold;
+    font-size: 20px;
+}
+.description-k h3{
+    font-family:"Karla";
+    font-size: 16px;
+    line-height: 23px;
 }
 
 .picture-k{
