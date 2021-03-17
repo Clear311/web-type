@@ -12,6 +12,11 @@
   display:flex;
   flex-flow: row;
 }
+
+h2{
+  margin: 20px;
+}
+
 .letter {
     position: relative;
     width: 500px;
@@ -19,11 +24,11 @@
     display:block;
     margin: 20px;
     background: black;
-    opacity: 0%;
+    /* opacity: 0%; */
   }
-.letter:hover{
+/* .letter:hover{
   opacity:100%;
-}
+} */
 
   .d:before{
    position: absolute;
@@ -72,16 +77,15 @@
   /* opacity: 0%; */
   overflow-y: scroll;
   overflow-x: hidden;
-
 }
-.letter-2:hover{
+/* .letter-2:hover{
 opacity:100%;
-}
+} */
 
 .o:before{
   position: absolute;
   content: "";
-  height: 1000px;
+  height: 900px;
   width: 480px;
   /* bottom: 40px; */
   /* left: 40px; */
@@ -93,12 +97,53 @@ opacity:100%;
 .o:after{
   position: absolute;
   content: "";
-  height: 700px;
+  height: 450px;
   width: 300px;
   /* bottom: 40px; */
   left: 90px;
-  top: 150px;
+  top: 200px;
   border-radius: 50%;
   background-color: black;
   border: 2px dotted white;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.letter-3 {
+  position: relative;
+  width: 500px;
+  height: 516px;
+  display:block;
+  margin: 20px;
+  margin-left: -10px;
+  background: black;
+  /* opacity: 0%; */
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(15, 25px);
+  grid-template-rows: repeat(15, 25px);
+  padding: 50px;
+  grid-gap: 0.2em;
+}
+.letter-3:hover{
+opacity:100%;
+}
+
+.N{
+  z-index: 2;
+  border-radius: 50%;
+  background-color: rgb(194, 230, 32);
+  border: 2px dotted white;
+}
+
+.N-empty{
+  z-index: 2;
+  border-radius: 50%;
+  opacity: 0%;}
