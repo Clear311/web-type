@@ -5,7 +5,12 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-
+html {
+    cursor: url("../pictures/mouse.png"), auto !important;
+}
+.element1, .element2, .element3, .element4, .block1 {
+    cursor: url("../pictures/hover.png"), auto !important;
+}
 
 .wrapper {
     margin: 0 auto;
@@ -40,12 +45,15 @@
     font-size: 70px;
     padding: 10px;
     color: rgb(167, 121, 6);
+    
+    cursor:pointer;
 }
 .element2{
     z-index: 2;
     /* background-color: rgb(190, 139, 10); */
     border-top:100px solid white;
     border-right:100px solid rgb(167, 121, 6);
+    cursor:pointer;
 }
 
 .element3{
@@ -54,6 +62,10 @@
     grid-template-columns: repeat(2, 50px);
     grid-template-rows: repeat(2, 50px);
     flex-flow: column wrap;
+    cursor:pointer;
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
 }
 
 #circle1, #circle2, #circle3, #circle4{
@@ -71,20 +83,7 @@
     background-color:#FFFFFF;
 } */
 
-/* .element4{
-    background: linear-gradient(to top left,
-             rgba(0,0,0,0) 0%,
-             rgba(0,0,0,0) calc(50% - 0.8px),
-             rgba(0,0,0,1) 50%,
-             rgba(0,0,0,0) calc(50% + 0.8px),
-             rgba(0,0,0,0) 100%),
-             linear-gradient(to top right,
-             rgba(0,0,0,0) 0%,
-             rgba(0,0,0,0) calc(50% - 0.8px),
-             rgba(0,0,0,1) 50%,
-             rgba(0,0,0,0) calc(50% + 0.8px),
-             rgba(0,0,0,0) 100%);   
-} */
+
 
 .element4{
     transform: scale(.79) rotate(45deg);
@@ -94,12 +93,18 @@
     color: white;
     text-align: center;
     padding: 17px;
+    cursor:pointer;
+    /* transform: scaleX(0.5);
+    transform: scaleY(1); */
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
 }
 
 
 
 .about-area {
-    height: 1320px;
+    height: 1520px;
     overflow:hidden;
 }
 
@@ -107,11 +112,22 @@
     flex-flow:column;
     cursor: pointer;
 }
-.block1, .block2, .block3, .block4, .block5, .block6{
+.events-header{
+    width:1250px;
+    height: 100px;
+    background-color: rgb(167, 121, 6);
+    font-family:"Zhuo";
+    font-size: 35px;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.block{
     width:1250px;
     height: 220px;
     background-color: white;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
 }
 
 .division{
