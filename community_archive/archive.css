@@ -8,7 +8,7 @@
 html {
     cursor: url("../pictures/mouse.png"), auto !important;
 }
-.element1, .element2, .element3, .element4, .block1 {
+.element1, .element2, .element3, .element4, .block {
     cursor: url("../pictures/hover.png"), auto !important;
 }
 
@@ -136,42 +136,44 @@ html {
     /* padding: 10px; */
 }
 .description-k{
-    display:block;
+    /* display:block; */
     padding: 10px;
     padding-left: 60px;
-    width: 700px;
+    width: 900px;
     height: 200px;
     line-height: 15px;
 }
 .description-k h1{
     font-family:"BioRhyme";
     font-size: 30px;
+    color:#A84526;
 }
 .description-k h4{
     font-family:"Fangzheng";
     font-size: 20px;
 }
 .description-k h2{
-    font-family:"Karla";
-    font-style: bold;
+    font-family:"Karla"; 
     font-size: 20px;
+    color:rgb(167, 121, 6);
 }
 .description-k h3{
     font-family:"Karla";
     font-size: 16px;
     line-height: 23px;
+    font-weight: 500;
 }
 
 .picture-k{
     display:block;
-    margin-left: 300px;
+    /* margin-left: 300px; */
     padding: 10px;
 }
 .detail-content1{
-    height: 100px;
+    height: 400px;
     width:1250px;
-    background-color: grey;
-    padding: 20px;
+    background-color: #276893;
+    padding: 50px;
 }
 
 .side-nav{
