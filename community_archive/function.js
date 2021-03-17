@@ -33,6 +33,18 @@ $(document).ready(function() {
 //      });
  });
 
+ $(document).ready(function() {    
+    $('.detail-content2').hide();
+    $('.division2').click(function(){
+            $(this).parent().next()
+                   .slideToggle()
+                   .siblings('.detail-content2').slideUp();
+            return false;
+    });
+//      $('.close').click(function(){
+//          $('#accordion .hide').slideUp();
+//      });
+ });
 
 //rotation of elements
 $('.element3').on('click', function(){

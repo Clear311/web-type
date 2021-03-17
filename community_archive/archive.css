@@ -104,7 +104,7 @@ html {
 
 
 .about-area {
-    height: 1520px;
+    height: 1521px;
     overflow:hidden;
 }
 
@@ -127,7 +127,7 @@ html {
     width:1250px;
     height: 220px;
     background-color: white;
-    /* border-bottom: 2px solid black; */
+    border-bottom: 2px dotted #A84526;
 }
 
 .division{
@@ -165,15 +165,83 @@ html {
 }
 
 .picture-k{
-    display:block;
+    position: relative;
     /* margin-left: 300px; */
     padding: 10px;
 }
+
+.division2{
+    display: flex;
+    flex-flow:row;
+    /* padding: 10px; */
+}
+.description-y{
+    /* display:block; */
+    padding: 10px;
+    padding-left: 60px;
+    width: 900px;
+    height: 200px;
+    line-height: 15px;
+}
+.description-y h1{
+    font-family:"BioRhyme";
+    font-size: 30px;
+    color:#A84526;
+}
+.description-y h4{
+    font-family:"Fangzheng";
+    font-size: 20px;
+}
+.description-y h2{
+    font-family:"Karla"; 
+    font-size: 20px;
+    color:rgb(167, 121, 6);
+}
+.description-y h3{
+    font-family:"Karla";
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 500;
+}
+
+.picture-y{
+    position: relative;
+    /* margin-left: 300px; */
+    padding: 10px;
+}
+
 .detail-content1{
     height: 400px;
     width:1250px;
     background-color: #276893;
-    padding: 50px;
+    padding: 20px;
+    line-height: 28px;
+    display:flex;
+    flex-flow: row;
+}
+.para1 p{
+    color:white;
+    font-family: karla;
+    width:700px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.detail-content2{
+    height: 400px;
+    width:1250px;
+    background-color: #276893;
+    padding: 20px;
+    line-height: 28px;
+    display:flex;
+    flex-flow: row;
+}
+.para2 p{
+    color:white;
+    font-family: karla;
+    width:700px;
+    padding-left: 30px;
+    font-size: 14px;
 }
 
 .side-nav{
