@@ -72,6 +72,15 @@ $(document).ready(function() {
     });
  });
 
+ $(document).ready(function() {    
+    $('.detail-content6').hide();
+    $('.division6').click(function(){
+            $(this).parent().next()
+                   .slideToggle()
+                   .siblings('.detail-content6').slideUp();
+            return false;
+    });
+ });
 //rotation of elements
 $('.element3').on('click', function(){
     var angle = ($('.element3').data('angle') + 360) ||360;
