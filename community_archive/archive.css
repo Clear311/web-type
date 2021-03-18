@@ -112,6 +112,11 @@ html {
     flex-flow:column;
     cursor: pointer;
 }
+
+.columns{
+    display:flex;
+    flex-flow:row;
+}
 .events-header{
     width:1250px;
     height: 100px;
@@ -128,6 +133,14 @@ html {
     height: 220px;
     background-color: white;
     border-bottom: 2px dotted #A84526;
+}
+
+.column-block{
+    width:312px;
+    height:500px;
+    background-color: #A84526;
+    border: 2px solid white;
+    /* margin-right:1px; */
 }
 
 .division{
