@@ -41,9 +41,35 @@ $(document).ready(function() {
                    .siblings('.detail-content2').slideUp();
             return false;
     });
-//      $('.close').click(function(){
-//          $('#accordion .hide').slideUp();
-//      });
+ });
+
+ $(document).ready(function() {    
+    $('.detail-content3').hide();
+    $('.division3').click(function(){
+            $(this).parent().next()
+                   .slideToggle()
+                   .siblings('.detail-content3').slideUp();
+            return false;
+    });
+ });
+ $(document).ready(function() {    
+    $('.detail-content4').hide();
+    $('.division4').click(function(){
+            $(this).parent().next()
+                   .slideToggle()
+                   .siblings('.detail-content4').slideUp();
+            return false;
+    });
+ });
+
+ $(document).ready(function() {    
+    $('.detail-content5').hide();
+    $('.division5').click(function(){
+            $(this).parent().next()
+                   .slideToggle()
+                   .siblings('.detail-content5').slideUp();
+            return false;
+    });
  });
 
 //rotation of elements

@@ -210,6 +210,125 @@ html {
     padding: 10px;
 }
 
+.division3{
+    display: flex;
+    flex-flow:row;
+    /* padding: 10px; */
+}
+.description-3{
+    /* display:block; */
+    padding: 10px;
+    padding-left: 60px;
+    width: 900px;
+    height: 200px;
+    line-height: 15px;
+}
+.description-3 h1{
+    font-family:"BioRhyme";
+    font-size: 30px;
+    color:#A84526;
+}
+.description-3 h4{
+    font-family:"Fangzheng";
+    font-size: 20px;
+}
+.description-3 h2{
+    font-family:"Karla"; 
+    font-size: 20px;
+    color:rgb(167, 121, 6);
+}
+.description-3 h3{
+    font-family:"Karla";
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 500;
+}
+
+.picture-3{
+    position: relative;
+    /* margin-left: 300px; */
+    padding: 10px;
+}
+
+.division4{
+    display: flex;
+    flex-flow:row;
+    /* padding: 10px; */
+}
+.description-4{
+    /* display:block; */
+    padding: 10px;
+    padding-left: 60px;
+    width: 900px;
+    height: 200px;
+    line-height: 15px;
+}
+.description-4 h1{
+    font-family:"BioRhyme";
+    font-size: 30px;
+    color:#A84526;
+}
+.description-4 h4{
+    font-family:"Fangzheng";
+    font-size: 20px;
+}
+.description-4 h2{
+    font-family:"Karla"; 
+    font-size: 20px;
+    color:rgb(167, 121, 6);
+}
+.description-4 h3{
+    font-family:"Karla";
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 500;
+}
+
+.picture-4{
+    position: relative;
+    /* margin-left: 300px; */
+    padding: 10px;
+}
+.division5{
+    display: flex;
+    flex-flow:row;
+    /* padding: 10px; */
+}
+.description-5{
+    /* display:block; */
+    padding: 10px;
+    padding-left: 60px;
+    width: 900px;
+    height: 200px;
+    line-height: 15px;
+}
+.description-5 h1{
+    font-family:"BioRhyme";
+    font-size: 30px;
+    color:#A84526;
+}
+.description-5 h4{
+    font-family:"Fangzheng";
+    font-size: 20px;
+}
+.description-5 h2{
+    font-family:"Karla"; 
+    font-size: 20px;
+    color:rgb(167, 121, 6);
+}
+.description-5 h3{
+    font-family:"Karla";
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 500;
+}
+
+.picture-5{
+    position: relative;
+    /* margin-left: 300px; */
+    padding: 10px;
+}
+
 .detail-content1{
     height: 400px;
     width:1250px;
@@ -237,6 +356,56 @@ html {
     flex-flow: row;
 }
 .para2 p{
+    color:white;
+    font-family: karla;
+    width:700px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.detail-content3{
+    height: 400px;
+    width:1250px;
+    background-color: #276893;
+    padding: 20px;
+    line-height: 28px;
+    display:flex;
+    flex-flow: row;
+}
+.para3 p{
+    color:white;
+    font-family: karla;
+    width:700px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+.detail-content4{
+    height: 400px;
+    width:1250px;
+    background-color: #276893;
+    padding: 20px;
+    line-height: 28px;
+    display:flex;
+    flex-flow: row;
+}
+.para4 p{
+    color:white;
+    font-family: karla;
+    width:700px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.detail-content5{
+    height: 400px;
+    width:1250px;
+    background-color: #276893;
+    padding: 20px;
+    line-height: 28px;
+    display:flex;
+    flex-flow: row;
+}
+.para5 p{
     color:white;
     font-family: karla;
     width:700px;
