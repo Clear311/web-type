@@ -45,7 +45,6 @@ html {
     font-size: 70px;
     padding: 10px;
     color: rgb(167, 121, 6);
-    
     cursor:pointer;
 }
 .element2{
@@ -141,6 +140,19 @@ html {
     background-color: #A84526;
     border: 2px solid white;
     /* margin-right:1px; */
+    align-content: center;
+}
+#image{
+    height:300px;
+    width:300px;
+    overflow:hidden;
+    position:relative;
+    margin: 20px;
+}
+#image img{
+    position: absolute;
+    left:0;
+    /* bottom:0;  */
 }
 
 .division{
