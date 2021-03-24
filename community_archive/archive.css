@@ -142,7 +142,7 @@ html {
     /* margin-right:1px; */
     align-content: center;
 }
-#image{
+/* #image{
     height:100px;
     width:100px;
     overflow:hidden;
@@ -152,8 +152,8 @@ html {
 #image img{
     position: absolute;
     left:0;
-    /* bottom:0;  */
-}
+    bottom:0; 
+} */
 
 .division{
     display: flex;
