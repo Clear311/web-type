@@ -143,8 +143,8 @@ html {
     align-content: center;
 }
 #image{
-    height:300px;
-    width:300px;
+    height:100px;
+    width:100px;
     overflow:hidden;
     position:relative;
     margin: 20px;
@@ -230,8 +230,10 @@ html {
 }
 
 .picture-y{
-    position: relative;
+    /* position: relative; */
+    display: inline-block;
     /* margin-left: 300px; */
+    text-align: right;
     padding: 10px;
 }
 
@@ -349,9 +351,11 @@ html {
 }
 
 .picture-5{
-    position: relative;
+    /* position: relative; */
     /* margin-left: 300px; */
     padding: 10px;
+    text-align:right;
+    display: inline-block;
 }
 
 .division6{
@@ -408,7 +412,7 @@ html {
     font-family: karla;
     width:700px;
     padding-left: 30px;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .detail-content2{
@@ -425,7 +429,7 @@ html {
     font-family: karla;
     width:700px;
     padding-left: 30px;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .detail-content3{
@@ -442,7 +446,7 @@ html {
     font-family: karla;
     width:700px;
     padding-left: 30px;
-    font-size: 14px;
+    font-size: 17px;
 }
 .detail-content4{
     height: 400px;
@@ -458,7 +462,7 @@ html {
     font-family: karla;
     width:700px;
     padding-left: 30px;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .detail-content5{
@@ -475,7 +479,7 @@ html {
     font-family: karla;
     width:700px;
     padding-left: 30px;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .detail-content6{
@@ -492,7 +496,7 @@ html {
     font-family: karla;
     width:700px;
     padding-left: 30px;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .side-nav{
