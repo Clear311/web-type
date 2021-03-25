@@ -141,6 +141,15 @@ html {
     border: 2px solid white;
     /* margin-right:1px; */
     align-content: center;
+    padding: 20px;
+}
+
+.column-block p{
+    font-family: "Karla";
+    font-size: 17px;
+    line-height: 26px;
+    color: white;
+    text-align: left;   
 }
 /* #image{
     height:100px;
@@ -154,6 +163,27 @@ html {
     left:0;
     bottom:0; 
 } */
+.column-block h1{
+    font-family:"BioRhyme";
+    font-size: 25px;
+    color:white;
+    display: inline-block;
+    /* text-decoration: dotted underline; */
+}
+.column-block ul{
+    list-style-type: square;
+    font-family: "Karla";
+    font-size: 17px;
+    line-height: 36px;
+    color: white;
+    text-align: left; 
+    text-decoration: underline;
+    cursor: pointer;
+}
+#underline{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 .division{
     display: flex;
