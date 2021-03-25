@@ -6,10 +6,10 @@
           box-sizing: border-box;
 }
 html {
-    cursor: url("../pictures/mouse.png"), auto !important;
+    cursor: url("pictures/mouse.png"), auto !important;
 }
 .element1, .element2, .element3, .element4, .block {
-    cursor: url("../pictures/hover.png"), auto !important;
+    cursor: url("pictures/hover.png"), auto !important;
 }
 
 .wrapper {
