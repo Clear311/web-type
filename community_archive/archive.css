@@ -595,8 +595,8 @@ html {
 
 @font-face {
     font-family: 'Zhuo';
-    src: url('../fonts/Zhuo/Zhuo-webfont.woff2') format('woff2'),
-         url('../fonts/Zhuo/Zhuo-webfont.woff') format('woff');
+    src: url('fonts/Zhuo/Zhuo-webfont.woff2') format('woff2'),
+         url('fonts/Zhuo/Zhuo-webfont.woff') format('woff');
          font-weight: normal;
          font-style: normal;
          font-display: swap;
@@ -604,7 +604,7 @@ html {
 
 @font-face {
     font-family: 'Fangzheng';
-    src: url('../fonts/Fangzheng/Fangzheng-webfont.woff2') format('woff2'),
-         url('../fonts/Fangzheng/Fangzheng-webfont.woff') format('woff');
+    src: url('fonts/Fangzheng/Fangzheng-webfont.woff2') format('woff2'),
+         url('fonts/Fangzheng/Fangzheng-webfont.woff') format('woff');
 }
 
