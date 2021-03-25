@@ -138,7 +138,7 @@ html {
     width:312px;
     height:500px;
     background-color: #A84526;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     /* margin-right:1px; */
     align-content: center;
     padding: 20px;
@@ -590,7 +590,7 @@ html {
     padding: 0 10px;
 }
 #about{
-    background: yellow;
+    /* background: yellow; */
 }
 
 @font-face {
