@@ -37,6 +37,7 @@
 } */
 body{
 	font-family: 'Stomach';
+  /* background-color: beige; */
 }
 
 .p-animate {
@@ -49,10 +50,15 @@ body{
 
 #sliders ul{
 	margin: auto;
+  list-style-type: none;
+
 }
 #sliders li{
 	display: flex;
 	justify-content: center;
+  font-family:'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 0.5em;
 }
 
 .range-name, .min, .max{
@@ -66,10 +72,13 @@ body{
 }
 
 input.axis-range{
-	width: 120px;
-	margin: 0 20px;
+	width: 150px;
+	/* margin: 0 20px; */
 }
 
+/* .weight{
+
+} */
 .container{
     /* width: 100vw;
     height: 100vh; */
@@ -115,7 +124,7 @@ nav{
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
     font-size: 0.5em;
-    text-align: centter;
+    text-align: center;
     /* margin-left: 2em; */
     width: 350px;
     color: white;
@@ -123,8 +132,8 @@ nav{
 }
 
 main{
-    background:  rgb(223, 207, 68);
-    border: solid magenta 1px;
+    /* background:  rgb(223, 207, 68); */
+    /* border: solid magenta 1px; */
     cursor: url("gg.png"), auto !important;
     grid-area: main;
     border-radius: var(--main-radius);
@@ -136,7 +145,7 @@ main{
     font-variation-settings: 'GRMA' 100;
     font-size: 80px;
     /* cursor: pointer; */
-    color: rgb(218, 132, 147);
+    color: rgb(248, 195, 195);
 }
 
 #demo{
@@ -149,9 +158,10 @@ main{
 
 #middle{
   font-family: 'Stomach';
-  font-size: 50px;
+  font-size: 40px;
   /* cursor: pointer; */
-  color: rgb(218, 132, 147);
+  color: green;
+  margin-top:250px;
 }
 
 .animate{
@@ -192,24 +202,31 @@ main{
 
  
 #content1 {
-    background: #6fffd2;
+    background: white;
     grid-area: content1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     cursor: url("mouse.png"), auto !important;
+    background-image:url(m-1.png);
+    background-position: center;
+    background-size:370px;
   }
 
 
 #content2 {
-    background: #64ffda;
+    justify-content: center;
+    background: white;
     grid-area: content2;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     cursor: url("mouse.png"), auto !important;
+    background-image:url(m-2.png);
+    background-position: center;
+    background-size:330px;
   }
   
 #content3 {
-    background: #73ffba;
+    background: white;
     grid-area: content3;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -231,9 +248,9 @@ footer{
     font-size: 0.5em;
     line-height: 1.5em;
     text-align: left;
-    /* margin-left: 2em; */
+    margin-right: 10em;
     color:rgb(40, 172, 23);
-    padding: 1em;
+    padding: 5em;
 }
 
 @media only screen and (max-width: 550px) {
