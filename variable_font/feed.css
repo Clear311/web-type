@@ -1,8 +1,13 @@
 *{
     margin:0 0 0 0;
-    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
+:root {
+    /* --main-padding: 5px; */
+    --GRMA: 300;
+    --wdth: 120;
+    --XHGT: 100;
+  }
 /* .picture{
     margin-left: 20em;
 } */
