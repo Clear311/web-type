@@ -118,17 +118,20 @@ nav{
     grid-area: nav;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    margin-bottom: 2em;
+    border: solid rgb(248, 195, 195) 1px;
 }
 
 #intro{
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    font-size: 0.5em;
+    font-size: 1em;
     text-align: center;
     /* margin-left: 2em; */
-    width: 350px;
-    color: white;
-    background-color: rgb(245, 56, 197);
+    /* width: 350px; */
+    color: rgb(248, 195, 195)
+    /* background-color: rgb(248, 195, 195); */
+    
 }
 
 main{
@@ -166,8 +169,11 @@ main{
   font-family: 'Stomach';
   font-size: 60px;
   /* cursor: pointer; */
-  color: green;
+  color: white;
   text-align: left;
+  background-color: rgb(248, 195, 195);
+  border-radius:10px;
+  /* padding: 0.5em; */
 }
 
 #middle{
@@ -206,14 +212,24 @@ main{
 
 #sidebar {
     background: white;
-    border: solid magenta 1px;
+    /* border: solid magenta 1px; */
     grid-area: sidebar;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     cursor: url("hover.png"), auto !important;
-
+    /* padding: 1em; */
+    padding-left: 1em;
 }
-
+#sidebar-title{
+  font-family: 'Manrope', sans-serif;
+  font-weight:600;
+  font-size: 0.5em;
+  background-color: green;
+  color: white;
+  width: 10em;
+  /* display: flex; */
+  /* margin-left: 5em; */
+}
  
 #content1 {
     background: white;
@@ -295,6 +311,9 @@ footer{
     color:rgb(40, 172, 23);
     border: solid green 1px;
     padding: 1.5em;
+}
+#underline{
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 550px) {
