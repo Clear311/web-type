@@ -29,11 +29,14 @@ body{
 .typeface{
     font-family: 'Stomach';
     color: green;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .y-animate {
     animation: weightchanges 4s infinite;
+    font-family: 'Stomach';
+    color: green;
+    font-size: 40px;
   }
 
 .invitation{
