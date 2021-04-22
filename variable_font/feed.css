@@ -1,0 +1,60 @@
+*{
+    margin:0 0 0 0;
+    -webkit-box-sizing: border-box;
+}
+
+/* .picture{
+    margin-left: 20em;
+} */
+
+body{
+    background-color: rgb(255, 255, 241);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-flow:column;
+    cursor: url("mouse.png"), auto !important;
+
+}
+.typeface{
+    font-family: 'Stomach';
+    color: green;
+}
+
+.invitation{
+  font-family: 'Manrope', sans-serif;
+  font-weight:600;
+  font-size: 1.5em;
+  background-color: green;
+  width: 15em;
+  color: white;
+  margin-left: 25em;
+}
+
+.invitation:hover{
+    background-color: pink;
+    cursor: url("hover.png"), auto !important;
+
+}
+
+@font-face{
+    font-family: 'Stomach';
+    src: url('StomachGX.ttf') format('truetype-variations');	
+  }
+  
+  .stomach-hungry {
+    font-variation-settings: "GRMA" 100;
+  }
+  
+  .stomach-halffull {
+    font-variation-settings: "GRMA" 450;
+  }
+  
+  .stomach-full {
+    font-variation-settings: "GRMA" 900;
+  }
