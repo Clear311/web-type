@@ -24,7 +24,12 @@ body{
 .typeface{
     font-family: 'Stomach';
     color: green;
+    font-size: 40px;
 }
+
+.y-animate {
+    animation: weightchanges 4s infinite;
+  }
 
 .invitation{
   font-family: 'Manrope', sans-serif;
@@ -36,9 +41,15 @@ body{
   margin-left: 25em;
 }
 
+a{
+    text-decoration: none;
+    cursor: url("hover.png"), auto !important;
+
+}
+
 .invitation:hover{
     background-color: pink;
-    cursor: url("hover.png"), auto !important;
+    /* cursor: url("hover.png"), auto !important; */
 
 }
 
@@ -58,3 +69,16 @@ body{
   .stomach-full {
     font-variation-settings: "GRMA" 900;
   }
+
+  @keyframes weightchanges {
+    0% {
+      font-variation-settings: 'GRMA' 100;
+    }
+    50% {
+      font-variation-settings: 'GRMA' 450;
+    }
+    100% {
+      font-variation-settings: 'GRMA' 900;
+    }
+  }
+  
