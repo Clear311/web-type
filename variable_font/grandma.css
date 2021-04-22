@@ -8,16 +8,68 @@
           text-rendering: optimizeSpeed;
 }
 
+/* typography */
+@font-face{
+  font-family: 'Stomach';
+  src: url('StomachGX.ttf') format('truetype-variations');	
+}
+
+.stomach-hungry {
+  font-variation-settings: "GRMA" 100;
+}
+
+.stomach-halffull {
+  font-variation-settings: "GRMA" 450;
+}
+
+.stomach-full {
+  font-variation-settings: "GRMA" 900;
+}
 :root {
     --main-radius: 5px;
     --main-padding: 5px;
-	--GRMA: 100;
-	--color: red;
+    --GRMA: 300;
+    --wdth: 120;
+    --XHGT: 100;
   }
 
 /* .container, .container *{
 	font-variation-settings:'GRMA' var(--GRMA);
 } */
+body{
+	font-family: 'Stomach';
+}
+
+.p-animate {
+  animation: weightchanges 4s infinite;
+}
+
+.stomach, .stomach *{
+	font-variation-settings: 'GRMA' var(--GRMA),'wdth' var(--wdth), 'XHGT' var(--XHGT);
+}
+
+#sliders ul{
+	margin: auto;
+}
+#sliders li{
+	display: flex;
+	justify-content: center;
+}
+
+.range-name, .min, .max{
+	width: 100px;
+}
+.min{
+	text-align: right;
+}
+.range-name::after{
+	content: ': ';
+}
+
+input.axis-range{
+	width: 120px;
+	margin: 0 20px;
+}
 
 .container{
     /* width: 100vw;
@@ -51,20 +103,6 @@
     color: black;
     font-variation-settings: "GRMA"900;
 } */
-
-/* .letter{
-    width: 2000px;
-    height: 1000px;
-    display:flex;
-    flex-flow: row;
-    text-align: center;
-    color: rgb(204, 104, 121);
-    font-family: 'Stomach';
-    padding:0.5em;
-    font-size: 10em;   
-} */
-
-
 
 
 nav{
@@ -132,28 +170,7 @@ main{
     padding-top: var(--main-padding);
 }
 
-#sliders ul{
-	margin: auto;
-}
-#sliders li{
-	display: flex;
-	justify-content: center;
-}
 
-.range-name, .min, .max{
-	width: 100px;
-}
-.min{
-	text-align: right;
-}
-.range-name::after{
-	content: ': ';
-}
-
-input.axis-range{
-	width: 120px;
-	margin: 0 20px;
-}
 
   
 #content1 {
@@ -163,14 +180,7 @@ input.axis-range{
     padding-top: var(--main-padding);
   }
 
-#con-1 p{
-    transition: font-variation-settings .3s ease-in, color .3s ease-in;
-    transition-property: font-variation-settings, color;
-    transition-duration: 0.3s, 0.3s;
-    transition-timing-function: ease-in, ease-in;
-    transition-delay: 0s, 0s;
-}
-  
+
 #content2 {
     background: #64ffda;
     grid-area: content2;
@@ -218,22 +228,18 @@ footer{
   }
   
 
-/* typography */
-@font-face{
-    font-family: 'Stomach';
-    src: url('StomachGX.ttf') format('truetype-variations');
-    font-style: normal;	
-    font-weight: normal;		
+/* ANIMATION */
+
+@keyframes weightchanges {
+  0% {
+    font-variation-settings: 'GRMA' 100;
+  }
+  50% {
+    font-variation-settings: 'GRMA' 450;
+  }
+  100% {
+    font-variation-settings: 'GRMA' 900;
+  }
 }
 
-.stomach-hungry {
-    font-variation-settings: "GRMA" 100;
-}
 
-.stomach-halffull {
-    font-variation-settings: "GRMA" 450;
-}
-
-.stomach-full {
-    font-variation-settings: "GRMA" 900;
-}

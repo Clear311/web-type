@@ -117,6 +117,14 @@ nav{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
+#intro{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: left;
+  margin-left: 2em;
+  color:rgb(40, 172, 23);
+}
 
 main{
     background: #84ffff;
@@ -193,6 +201,16 @@ footer{
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+}
+
+#about{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: left;
+  /* margin-left: 2em; */
+  color:rgb(40, 172, 23);
+  padding: 1em;
 }
 
 @media only screen and (max-width: 550px) {

@@ -3,18 +3,58 @@
 //slidebar//
 
 	//standard sliders
-	$('.axis-range').on('input', function(){
+	// $('.axis-range').on('input', function(){
 
-		let value = parseInt($(this).val()); //get slider input value
-		// console.log(value);
+	// 	let value = parseInt($(this).val()); //get slider input value
+	// 	// console.log(value);
 
-		const slidertype = $(this).data('type'); //get slider axis
+	// 	const slidertype = $(this).data('type'); //get slider axis
 
-		// console.log("--"+slidertype, value );
+	// 	// console.log("--"+slidertype, value );
 
-		$('#sliders').css("--"+slidertype, value);
+	// 	$('#sliders').css("--"+slidertype, value);
 
-	});
+	// });
+
+  $(document).ready(function () {
+
+    console.log('script loaded');
+
+    const wghtmax = 900;
+    const wdthmax = 150;
+
+    //standard sliders
+    $('.axis-range').on('input', function () {
+
+        let value = parseInt($(this).val()); //get slider input value
+        // console.log(value);
+
+        const slidertype = $(this).data('type'); //get slider axis
+
+        // console.log("--"+slidertype, value );
+
+        $('.tester').css("--" + slidertype, value);
+
+    });
+
+    $('#size').on('input', function () {
+
+        let sizeValue = parseInt($(this).val()); //get slider input value
+        console.log(sizeValue);
+        $('.tester').css('font-size', sizeValue + 'px');
+
+    });
+
+
+    $('#lineheight').on('input', function () {
+
+        let leadingValue = $(this).val(); //get slider input value
+        console.log(leadingValue);
+        $('.tester').css('line-height', leadingValue);
+
+    });
+
+});
 
 
 
