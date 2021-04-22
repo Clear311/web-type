@@ -51,34 +51,72 @@ body{
 #sliders ul{
 	margin: auto;
   list-style-type: none;
+  /* display: flex;
+  flex-flow: column; */
 
 }
 #sliders li{
 	display: flex;
-	justify-content: center;
+  text-align: left;
+	/* justify-content: center; */
   font-family:'Manrope', sans-serif;
   font-weight: 600;
   font-size: 0.5em;
 }
 
 .range-name, .min, .max{
-	width: 100px;
-}
+	width: 110px;
+  display: inline;
+  font-family:'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1em;}
 .min{
 	text-align: right;
+  /* display: block; */
+  color:rgb(250, 152, 152);
+}
+.max{
+  color:rgb(250, 152, 152);
 }
 .range-name::after{
 	content: ': ';
 }
+.range-name{
+  color: green;
+}
+/* .range axis-range menu{
+  align-items: center;
+} */
 
 input.axis-range{
 	width: 150px;
 	/* margin: 0 20px; */
 }
 
-/* .weight{
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  background: rgb(248, 197, 197); /* Otherwise white in Chrome */
+  border-radius: 30%;
+}
 
+/* input[type=range]::-ms-track {
+  cursor: url("hover.png"), auto !important;
 } */
+
+.in-arrow{
+  /* display: inline-block; */
+  /* width: 200px; */
+  margin: 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 26px;
+  width: 16px;
+  border-radius: 8px;
+  background: green;
+}
+
 .container{
     /* width: 100vw;
     height: 100vh; */
