@@ -138,6 +138,9 @@ main{
     grid-area: main;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    background-image:url(my-s.png);
+    background-position: center;
+    background-size:500px;
 }
 
 #text{
@@ -209,7 +212,7 @@ main{
     cursor: url("mouse.png"), auto !important;
     background-image:url(m-1.png);
     background-position: center;
-    background-size:370px;
+    background-size:330px;
   }
 
 
@@ -231,6 +234,9 @@ main{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     cursor: url("mouse.png"), auto !important;
+    background-image:url(m-3.png);
+    background-position: center;
+    background-size:330px;
   }
   
 
