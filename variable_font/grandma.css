@@ -107,7 +107,7 @@ input.axis-range{
 
 nav{
     /* background-color: rgb(214, 66, 66); */
-    border: solid red 1px;
+    /* border: solid red 1px; */
     grid-area: nav;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -115,11 +115,13 @@ nav{
 
 #intro{
     font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    text-align: left;
-    margin-left: 2em;
-    color:rgb(40, 172, 23);
+    font-weight: 600;
+    font-size: 0.5em;
+    text-align: centter;
+    /* margin-left: 2em; */
+    width: 350px;
+    color: white;
+    background-color: rgb(245, 56, 197);
 }
 
 main{
@@ -133,8 +135,15 @@ main{
     font-family: 'Stomach';
     font-variation-settings: 'GRMA' 100;
     font-size: 60px;
-    cursor: pointer;
+    /* cursor: pointer; */
     color: rgb(218, 132, 147);
+}
+
+#middle{
+  font-family: 'Stomach';
+  font-size: 70px;
+  /* cursor: pointer; */
+  color: rgb(218, 132, 147);
 }
 
 .animate{
