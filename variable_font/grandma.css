@@ -140,7 +140,18 @@ main{
     padding-top: var(--main-padding);
     background-image:url(my-s.png);
     background-position: center;
-    background-size:500px;
+    background-size:900px;
+}
+
+#main-title{
+  font-family: 'Manrope', sans-serif;
+  font-weight:600;
+  font-size: 0.5em;
+  background-color: green;
+  color: white;
+  width: 10em;
+  /* display: flex; */
+  margin-left: 5em;
 }
 
 #text{
@@ -238,6 +249,16 @@ main{
     background-position: center;
     background-size:330px;
   }
+
+#q1{
+  font-family: 'Manrope', sans-serif;
+  font-weight:600;
+  font-size: 0.5em;
+  background-color: green;
+  color: white;
+  width: 10em;
+  display: inline-block;
+}
   
 
 footer{
@@ -246,6 +267,21 @@ footer{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     cursor: url("mouse.png"), auto !important;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: block;
+    /* flex-flow: row; */
+}
+
+#title{
+  font-family: 'Manrope', sans-serif;
+  font-weight:600;
+  font-size: 0.5em;
+  background-color: green;
+  color: white;
+  width: 15em;
+  /* text-align: center; */
+  margin-left: 20em;
 }
 
 #about{
@@ -254,9 +290,11 @@ footer{
     font-size: 0.5em;
     line-height: 1.5em;
     text-align: left;
-    margin-right: 10em;
+    /* margin-right: 10em; */
+    margin-left: 20em;
     color:rgb(40, 172, 23);
-    padding: 5em;
+    border: solid green 1px;
+    padding: 1.5em;
 }
 
 @media only screen and (max-width: 550px) {
