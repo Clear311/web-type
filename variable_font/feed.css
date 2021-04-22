@@ -13,7 +13,10 @@
 } */
 
 body{
-    background-color: rgb(255, 255, 241);
+    /* background-color: rgb(255, 255, 241); */
+    background-image:url(bkg.jpg);
+    background-position: center;
+    /* background-size:330px; */
 }
 
 .container{
