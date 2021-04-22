@@ -9,7 +9,13 @@
 :root {
     --main-radius: 5px;
     --main-padding: 5px;
+	--GRMA: 100;
+	--color: red;
   }
+
+/* .container, .container *{
+	font-variation-settings:'GRMA' var(--GRMA);
+} */
 
 .container{
     /* width: 100vw;
@@ -30,7 +36,7 @@
     font-weight: 800;
     font-family: 'Stomach';
     font-size: 2em;
-    font-variation-settings: "GRMA"100;
+    font-variation-settings: "GRMA" 100;
     -webkit-font-smoothing: antialiased;
     color: #004d40;
     text-align: center;
@@ -66,6 +72,8 @@ nav{
     padding-top: var(--main-padding);
 }
 
+
+
 main{
     background: #84ffff;
     grid-area: main;
@@ -73,13 +81,69 @@ main{
     padding-top: var(--main-padding);
 }
 
+#text{
+    font-family: 'Stomach';
+    font-variation-settings: 'GRMA' 100;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.animate{
+    animation: animationProps 0.5s 1 ease;
+    animation-fill-mode: forwards;
+  }
+  @keyframes animationProps {
+    0% {
+      font-variation-settings: 'GRMA' 400;
+    }
+    100% {
+      font-variation-settings: 'GRMA' 650;
+    }
+  }
+  /* animation + keyframes for second weight change from 650 to 900 */
+  .animate2{
+    animation: animationProps2 0.5s 1 ease;
+    animation-fill-mode: forwards;
+  }
+  @keyframes animationProps2 {
+    0% {
+      font-variation-settings: 'GRMA' 650;
+    }
+    100% {
+      font-variation-settings: 'GRMA' 900;
+    }
+}
 
 #sidebar {
     background: #18ffff;
     grid-area: sidebar;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-  }
+}
+
+#sliders ul{
+	margin: auto;
+}
+#sliders li{
+	display: flex;
+	justify-content: center;
+}
+
+.range-name, .min, .max{
+	width: 100px;
+}
+.min{
+	text-align: right;
+}
+.range-name::after{
+	content: ': ';
+}
+
+input.axis-range{
+	width: 120px;
+	margin: 0 20px;
+}
+
   
 #content1 {
     background: #6fffd2;
@@ -129,7 +193,9 @@ footer{
 /* typography */
 @font-face{
     font-family: 'Stomach';
-    src: url('StomachGX.ttf') format('truetype-variations');			
+    src: url('StomachGX.ttf') format('truetype-variations');
+    font-style: normal;	
+    font-weight: normal;		
 }
 
 .stomach-hungry {
