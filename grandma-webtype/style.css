@@ -1,23 +1,69 @@
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          scroll-behavior: smooth;
-          text-rendering: optimizeSpeed;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-:root {
-    --main-radius: 5px;
-    --main-padding: 5px;
-	--GRMA: 100;
-	--color: red;
-  }
+/* typography */
+@font-face {
+    font-family: 'Stomach';
+    src: url('StomachGX.ttf') format('truetype-variations');	
+}
 
-/* .container, .container *{
-	font-variation-settings:'GRMA' var(--GRMA);
-} */
+.stomach-hungry {
+    font-variation-settings: "GRMA" 100;
+}
+
+.stomach-halffull {
+    font-variation-settings: "GRMA" 450;
+}
+
+.stomach-full {
+    font-variation-settings: "GRMA" 900;
+}
+
+:root{
+	--GRMA: 300;
+	--wdth: 120;
+	--XHGT: 100;
+}
+
+body{
+	font-family: 'Stomach';
+}
+
+.p-animate {
+  animation: weightchanges 4s infinite;
+}
+
+.stomach, .stomach *{
+	font-variation-settings: 'GRMA' var(--GRMA),'wdth' var(--wdth), 'XHGT' var(--XHGT);
+}
+
+/*SLIDER STYLES*/
+#sliders ul{
+	margin: auto;
+}
+#sliders li{
+	display: flex;
+	justify-content: center;
+}
+
+.range-name, .min, .max{
+	width: 100px;
+}
+.min{
+	text-align: right;
+}
+.range-name::after{
+	content: ': ';
+}
+
+input.axis-range{
+	width: 120px;
+	margin: 0 20px;
+}
+
 
 .container{
     /* width: 100vw;
@@ -42,7 +88,7 @@
     -webkit-font-smoothing: antialiased;
     color: #004d40;
     text-align: center;
-    cursor: url("gg.png"), auto !important;
+    cursor: url("grandma.png"), auto !important;
     /* cursor: url("Grandma.png"); */
 }
 
@@ -65,23 +111,11 @@
 } */
 
 
-
-
 nav{
-    /* background-color: rgb(214, 66, 66); */
-    border: solid red 1px;
+    background: #a7ffeb;
     grid-area: nav;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-}
-
-#intro{
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    text-align: left;
-    margin-left: 2em;
-    color:rgb(40, 172, 23);
 }
 
 main{
@@ -96,7 +130,6 @@ main{
     font-variation-settings: 'GRMA' 100;
     font-size: 60px;
     cursor: pointer;
-    color: rgb(218, 132, 147);
 }
 
 .animate{
@@ -132,29 +165,6 @@ main{
     padding-top: var(--main-padding);
 }
 
-#sliders ul{
-	margin: auto;
-}
-#sliders li{
-	display: flex;
-	justify-content: center;
-}
-
-.range-name, .min, .max{
-	width: 100px;
-}
-.min{
-	text-align: right;
-}
-.range-name::after{
-	content: ': ';
-}
-
-input.axis-range{
-	width: 120px;
-	margin: 0 20px;
-}
-
   
 #content1 {
     background: #6fffd2;
@@ -162,14 +172,6 @@ input.axis-range{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
   }
-
-#con-1 p{
-    transition: font-variation-settings .3s ease-in, color .3s ease-in;
-    transition-property: font-variation-settings, color;
-    transition-duration: 0.3s, 0.3s;
-    transition-timing-function: ease-in, ease-in;
-    transition-delay: 0s, 0s;
-}
   
 #content2 {
     background: #64ffda;
@@ -187,19 +189,10 @@ input.axis-range{
   
 
 footer{
-    background: white;
+    background: #1de9b6;
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-}
-#about{
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    text-align: left;
-    /* margin-left: 2em; */
-    color:rgb(40, 172, 23);
-    padding: 1em;
 }
 
 @media only screen and (max-width: 550px) {
@@ -216,24 +209,18 @@ footer{
         "footer";
     }
   }
-  
 
-/* typography */
-@font-face{
-    font-family: 'Stomach';
-    src: url('StomachGX.ttf') format('truetype-variations');
-    font-style: normal;	
-    font-weight: normal;		
-}
 
-.stomach-hungry {
-    font-variation-settings: "GRMA" 100;
-}
+/* ANIMATION */
 
-.stomach-halffull {
-    font-variation-settings: "GRMA" 450;
-}
-
-.stomach-full {
-    font-variation-settings: "GRMA" 900;
+@keyframes weightchanges {
+  0% {
+    font-variation-settings: 'GRMA' 100;
+  }
+  50% {
+    font-variation-settings: 'GRMA' 450;
+  }
+  100% {
+    font-variation-settings: 'GRMA' 900;
+  }
 }
