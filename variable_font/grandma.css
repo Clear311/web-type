@@ -4,6 +4,8 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+          scroll-behavior: smooth;
+          text-rendering: optimizeSpeed;
 }
 
 :root {
@@ -66,13 +68,21 @@
 
 
 nav{
-    background: #a7ffeb;
+    /* background-color: rgb(214, 66, 66); */
+    border: solid red 1px;
     grid-area: nav;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
-
+#intro{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: left;
+    margin-left: 2em;
+    color:rgb(40, 172, 23);
+}
 
 main{
     background: #84ffff;
@@ -86,6 +96,7 @@ main{
     font-variation-settings: 'GRMA' 100;
     font-size: 60px;
     cursor: pointer;
+    color: rgb(218, 132, 147);
 }
 
 .animate{
@@ -151,6 +162,14 @@ input.axis-range{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
   }
+
+#con-1 p{
+    transition: font-variation-settings .3s ease-in, color .3s ease-in;
+    transition-property: font-variation-settings, color;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-in, ease-in;
+    transition-delay: 0s, 0s;
+}
   
 #content2 {
     background: #64ffda;
@@ -168,10 +187,19 @@ input.axis-range{
   
 
 footer{
-    background: #1de9b6;
+    background: white;
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+}
+#about{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: left;
+    /* margin-left: 2em; */
+    color:rgb(40, 172, 23);
+    padding: 1em;
 }
 
 @media only screen and (max-width: 550px) {

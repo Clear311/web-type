@@ -1,18 +1,24 @@
 // let x = 1
 // console.log("x:", x)
 //slidebar//
-$('.axis-range').on('input', function(){
 
-  let value = parseInt($(this).val()); //get slider input value
-  // console.log(value);
+	//standard sliders
+	$('.axis-range').on('input', function(){
 
-  const slidertype = $(this).data('type'); //get slider axis
+		let value = parseInt($(this).val()); //get slider input value
+		// console.log(value);
 
-  // console.log("--"+slidertype, value );
+		const slidertype = $(this).data('type'); //get slider axis
 
-  $('#sidebar').css("--"+slidertype, value);
+		// console.log("--"+slidertype, value );
 
-});
+		$('#sliders').css("--"+slidertype, value);
+
+	});
+
+
+
+
 
 //click to feed//
 //declare initial variable as 0 (the recipe!)
@@ -40,4 +46,5 @@ function checkValue() {
 }
 //Finally, we run the function we just declared
 checkValue();
+
 
