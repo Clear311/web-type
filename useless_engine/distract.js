@@ -55,9 +55,11 @@
 // }
 
 $(document).ready(function() {
-    animateDiv($('.a'));
+        animateDiv($('.a'));
         animateDiv($('.b'));
         animateDiv($('.c'));
+        animateDiv($('.d'));
+        animateDiv($('.e'));
 
 });
 
