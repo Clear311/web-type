@@ -117,9 +117,20 @@ transform:translateY(400px) skewY(-60deg);
 }
 
 .central {
-  width: 580px;
+  width: 700px;
   margin: 85px auto 0;
   text-align: center;
+}
+
+.central p{
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+#keywords{
+  color: #5186EC;
 }
 
 input[type='text'] {
@@ -191,6 +202,17 @@ input[type='submit2']:hover {
 
 input[type='text']:hover {
 box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+.column{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.sub1{
+  margin: 20px;
+  padding: 5px;
 }
 
 footer {

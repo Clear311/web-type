@@ -1,20 +1,72 @@
 body{
     margin: 30px 50px 50px 50px;
+    font-family: 'Karla', sans-serif; 
+    background-color: black;
+    cursor: url("mouse.png"), auto !important;
+
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow:row;
+}
+
+header{
+    background-color: rgb(77, 179, 9);
+    justify-content: center;
+    text-align: left;
+    color: white;
+    width: 50vw;
 }
 h1 {
     font-family: 'Karla', sans-serif;   
-    color:blueviolet;
+    color:rgb(77, 179, 9);
 }
 
-h2{
+.name p{
     font-family: 'Karla', sans-serif;   
+    color: white;
+    font-size: 50px;
+}
+
+.name{
+    background-color: rgb(245, 57, 88);
+    width: 50vw;
+    text-align: center;
+    display: block;
+}
+
+.name2{
+    width: 50vw;
+    text-align: left;
+    display: block;
 }
 
 h3{
-    font-family: 'Karla', sans-serif;   
+    font-family: 'Karla', sans-serif; 
+    color:rgb(77, 179, 9);  
+}
+
+h4{
+    font-family: 'Karla', sans-serif; 
+    color:white;  
+    background-color: rgb(245, 57, 88);
+    width: 70px;
+}
+
+h5{
+    font-family: 'Karla', sans-serif; 
+    color:white;  
+    background-color: rgb(245, 57, 88);
+    width: 100px;
+    font-size: 16px;
 }
 
 a{
     font-family: 'Karla', sans-serif;   
-    color:blueviolet;
+    color:rgb(77, 179, 9);
+    cursor: url("hover.png"), auto !important;
+
 }
