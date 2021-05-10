@@ -107,8 +107,15 @@ transform:translateY(400px) skewY(-60deg);
     cursor: pointer;
 }
 
-.a, .b, .c, .d, .e{
+.a, .b, .c, .d, .e, .f, .g, .h, .i, .j{
   position:fixed;
+}
+#shift1, #shift2, #shift3, #shift4, #shift5{
+  opacity:0;
+}
+
+#second1, #second2, #second3, #second4, #second5{
+  opacity:0;
 }
 
 .center{

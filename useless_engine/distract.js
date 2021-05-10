@@ -1,4 +1,3 @@
-// console.log(2);
 
 
 // function createWanderingDiv() {
@@ -54,13 +53,45 @@
 //     }
 // }
 
-$(document).ready(function() {
-        animateDiv($('.a'));
-        animateDiv($('.b'));
-        animateDiv($('.c'));
-        animateDiv($('.d'));
-        animateDiv($('.e'));
+// (function($){
+//     $.fn.group = function() {
+//         console.log(2);
+//         setTimeout(showpanel, 5000)
+//     }; 
+//  });
 
+function group(){
+    animateDiv($('.a'));
+    animateDiv($('.b'));
+    animateDiv($('.c'));
+    animateDiv($('.d'));
+    animateDiv($('.e'));
+    document.getElementById("shift1").style.opacity=1;
+    document.getElementById("shift2").style.opacity=1;
+    document.getElementById("shift3").style.opacity=1;
+    document.getElementById("shift4").style.opacity=1;
+    document.getElementById("shift5").style.opacity=1;
+}
+
+function peach(){
+    animateDiv($('.f'));
+    animateDiv($('.g'));
+    animateDiv($('.h'));
+    animateDiv($('.i'));
+    animateDiv($('.j'));
+    document.getElementById("second1").style.opacity=1;
+    document.getElementById("second2").style.opacity=1;
+    document.getElementById("second3").style.opacity=1;
+    document.getElementById("second4").style.opacity=1;
+    document.getElementById("second5").style.opacity=1;
+}
+
+
+
+
+$(document).ready(function() {
+        setTimeout(group, 5000);
+        setTimeout(peach, 10000);
 });
 
 function makeNewPosition($container) {
