@@ -152,7 +152,7 @@ input[type='text'] {
   text-align: center;
   text-shadow: 0 0 32px black;
   color: transparent;
-  -webkit-filter:blur(10px); filter:blur(10px);
+  /* -webkit-filter:blur(10px); filter:blur(10px); */
 }
 
 input[type='submit'] {
@@ -183,10 +183,10 @@ input[type='submit2'] {
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 5%;
-  background-color: rgb(241, 63, 63);
+  /* background-color: rgb(241, 63, 63); */
   cursor: pointer;
   text-align: center;
-  animation: big 2s ease-in-out infinite alternate;
+  /* animation: big 2s ease-in-out infinite alternate; */
 }
 
 @keyframes big {
