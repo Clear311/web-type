@@ -86,12 +86,39 @@ function peach(){
     document.getElementById("second5").style.opacity=1;
 }
 
+function roll(){
+    animateDiv($('.k'));
+    animateDiv($('.l'));
+    animateDiv($('.m'));
+    animateDiv($('.n'));
+    animateDiv($('.o'));
+    document.getElementById("second6").style.opacity=1;
+    document.getElementById("second7").style.opacity=1;
+    document.getElementById("second8").style.opacity=1;
+    document.getElementById("second9").style.opacity=1;
+    document.getElementById("second10").style.opacity=1;
+}
+
+function buyao(){
+    animateDiv($('.p'));
+    animateDiv($('.q'));
+    animateDiv($('.r'));
+    animateDiv($('.s'));
+    animateDiv($('.t'));
+    document.getElementById("u1").style.opacity=1;
+    document.getElementById("u2").style.opacity=1;
+    document.getElementById("u3").style.opacity=1;
+    document.getElementById("u4").style.opacity=1;
+    document.getElementById("u5").style.opacity=1;
+}
 
 
 
 $(document).ready(function() {
-        setTimeout(group, 5000);
-        setTimeout(peach, 10000);
+        setTimeout(group, 7000);
+        setTimeout(peach, 12000);
+        setTimeout(roll, 22000);
+        setTimeout(buyao, 32000);
 });
 
 function makeNewPosition($container) {

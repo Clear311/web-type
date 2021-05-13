@@ -112,14 +112,22 @@ transform:translateY(400px) skewY(-60deg);
     /* cursor: pointer; */
 }
 
-.a, .b, .c, .d, .e, .f, .g, .h, .i, .j{
+.a, .b, .c, .d, .e, .f, .g, .h, .i, .j {
+  position:fixed;
+}
+
+.k, .l, .m, .n, .o, .p, .q, .r, .s, .t{
   position:fixed;
 }
 #shift1, #shift2, #shift3, #shift4, #shift5{
   opacity:0;
 }
 
-#second1, #second2, #second3, #second4, #second5{
+#second1, #second2, #second3, #second4, #second5, #second6, #second7, #second8, #second9, #second10{
+  opacity:0;
+}
+
+#u1, #u2, #u3, #u4, #u5{
   opacity:0;
 }
 
