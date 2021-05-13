@@ -114,11 +114,54 @@ transform:translateY(400px) skewY(-60deg);
 
 .overlay{
   height:70px;
-  width: 300px;
-  background-color: blue;
-  /* justify-content: center; */
+  width: 310px;
+  /* background-color: rgb(247, 247, 247); */
   position: absolute;
+  display:none;
+  /* opacity: 0; */
+  font-family: 'Roboto', sans-serif;
+  /* color: rgb(71, 70, 70);
+  align-items: left; */
 }
+
+.overlay2{
+  height:70px;
+  width: 310px;
+  position: absolute;
+  display:none;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 500px;
+}
+
+.overlay3{
+  height:70px;
+  width: 310px;
+  position: absolute;
+  display:none;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 600px;
+  margin-top: 300px;
+}
+.overlay4{
+  height:70px;
+  width: 310px;
+  position: absolute;
+  display:none;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 400px;
+  margin-top: 400px;
+}
+.overlay5{
+  height:70px;
+  width: 310px;
+  position: absolute;
+  display:none;
+  font-family: 'Roboto', sans-serif;
+  margin-left: -200px;
+  margin-top: 350px;
+}
+
+
 
 .a, .b, .c, .d, .e, .f, .g, .h, .i, .j {
   position:fixed;

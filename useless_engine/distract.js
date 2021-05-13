@@ -114,16 +114,43 @@ function buyao(){
 
 
 
+function showOverlay(){
+    // animateDiv($('.overlay'));
+    $('.overlay').show()
+}
+
+function showOverlay2(){
+    // animateDiv($('.overlay'));
+    $('.overlay2').show()
+}
+
+function showOverlay3(){
+    // animateDiv($('.overlay'));
+    $('.overlay3').show()
+}
+function showOverlay4(){
+    // animateDiv($('.overlay'));
+    $('.overlay4').show()
+}
+function showOverlay5(){
+    // animateDiv($('.overlay'));
+    $('.overlay5').show()
+}
+
 $(document).ready(function() {
         setTimeout(group, 7000);
         setTimeout(peach, 12000);
         setTimeout(roll, 22000);
         setTimeout(buyao, 32000);
+        setTimeout(showOverlay, 9000);
+        setTimeout(showOverlay2, 15000);
+        setTimeout(showOverlay3, 26000);
+        setTimeout(showOverlay4, 37000);
+        setTimeout(showOverlay5, 40000);
 });
 
 function makeNewPosition($container) {
 
-    // Get viewport dimensions (remove the dimension of the div)
     var h = $container.height() - 50;
     var w = $container.width() - 50;
 
