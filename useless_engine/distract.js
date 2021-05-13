@@ -112,6 +112,7 @@ function buyao(){
     document.getElementById("u5").style.opacity=1;
 }
 
+// $('.right').popup();
 
 
 function showOverlay(){
