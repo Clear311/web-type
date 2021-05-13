@@ -112,6 +112,14 @@ transform:translateY(400px) skewY(-60deg);
     /* cursor: pointer; */
 }
 
+.overlay{
+  height:70px;
+  width: 300px;
+  background-color: blue;
+  /* justify-content: center; */
+  position: absolute;
+}
+
 .a, .b, .c, .d, .e, .f, .g, .h, .i, .j {
   position:fixed;
 }
@@ -140,6 +148,7 @@ transform:translateY(400px) skewY(-60deg);
   width: 700px;
   margin: 85px auto 0;
   text-align: center;
+  position:relative;
 }
 
 .central p{
