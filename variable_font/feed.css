@@ -33,6 +33,8 @@ body{
     font-family: 'Stomach';
     color: green;
     font-size: 50px;
+    font-weight: normal;
+
 }
 
 .y-animate {
@@ -67,6 +69,7 @@ a{
 @font-face{
     font-family: 'Stomach';
     src: url('StomachGX.ttf') format('truetype-variations');	
+    font-weight: normal;
   }
   
   .stomach-hungry {
